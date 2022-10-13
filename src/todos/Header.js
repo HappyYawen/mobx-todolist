@@ -6,9 +6,10 @@ function Header() {
   const { todoStore } = useRootStore()
   const [title, setTitle] = useState('')
   const { addTodo } = todoStore
-  return <header>
+  return <header className='header'>
     <h1>todos</h1>
     <input
+      className="new-todo"
       placeholder="what needs to be done?"
       autoFocus
       value={title}
